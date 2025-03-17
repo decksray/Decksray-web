@@ -20,8 +20,13 @@
   #contact-form {
     height: 25.6rem; //leaves room for stateMessage
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 1rem;
+
+    * {
+      width: 100%;
+    }
 
     div {
       display: flex;
@@ -50,6 +55,12 @@
       background-color: var(--accent-main-clr);
       font-weight: bold;
       width: 100%;
+    }
+
+    .state-message {
+      color: var(--accent-main-clr);
+      width: 7rem;
+      font-weight: bold;
     }
   }
 }

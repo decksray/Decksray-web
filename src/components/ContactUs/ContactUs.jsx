@@ -48,7 +48,6 @@ export const ContactUs = () => {
 
       <form id="contact-form" ref={form} onSubmit={sendEmail}>
         <div>
-          {/* <label>Name</label> */}
           <input
             type="text"
             name="from_name"
@@ -57,7 +56,6 @@ export const ContactUs = () => {
           />
         </div>
         <div>
-          {/* <label>Email</label> */}
           <input
             type="email"
             name="from_email"
@@ -66,7 +64,6 @@ export const ContactUs = () => {
           />
         </div>
         <div>
-          {/* <label>Message</label> */}
           <textarea
             name="message"
             minLength="5"
@@ -76,10 +73,14 @@ export const ContactUs = () => {
             required
           />
         </div>
-        <button type="submit" value="Send" disabled={isSubmitting}>
-          Send
-        </button>
-        <p>{stateMessage ? stateMessage : ""}</p>
+
+        {stateMessage ? (
+          <p className="state-message">{stateMessage}</p>
+        ) : (
+          <button type="submit" value="Send" disabled={isSubmitting}>
+            Subscribe
+          </button>
+        )}
       </form>
     </section>
   );

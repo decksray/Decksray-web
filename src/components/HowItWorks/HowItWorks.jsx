@@ -21,7 +21,7 @@ export const HowItWorks = () => {
           <h3>Scan your Trading Cards:</h3>
           <p>
             Ensures precise and detailed scans, preserving unique card
-            characteristics
+            characteristics.
           </p>
         </div>
 

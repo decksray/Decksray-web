@@ -36,8 +36,8 @@ export const MainFooter = () => {
         <a href="https://youtube.com/@Decksray" target="_blank">
           <i className="fa-brands fa-youtube" />
         </a>
-        <a href="https://x.com/decksray" target="_blank">
-          <i className="fa-brands fa-twitter" />
+        <a href="https://bsky.app/profile/decksray.com" target="_blank">
+          <i className="fa-brands fa-bluesky" />
         </a>
 
         {/* coming soon!!!*/}

@@ -4,6 +4,9 @@ export const MainFooter = () => {
   return (
     <div id="main-footer">
       <ul id="main-footer-links">
+        <a href="/join">
+          <li>Join Us!</li>
+        </a>
         <a
           href="https://www.termsfeed.com/live/38b88b54-eab1-41ed-81f7-c68e55cbf7dd"
           target="_blank"
@@ -46,7 +49,7 @@ export const MainFooter = () => {
           <i className="fa-brands fa-kickstarter" />
         </a> */}
 
-        {/* coming in the near future */}
+        {/* coming in the future? */}
 
         {/* <a href="#contact-us">
           <i className="fa-brands fa-patreon" />

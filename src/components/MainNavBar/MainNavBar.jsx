@@ -55,7 +55,7 @@ export const MainNavBar = () => {
   return (
     <nav id="main-nav-bar">
       <div id="main-nav-logo-container">
-        <a href="https://www.decksray.com/">
+        <a href="/">
           <img src={decksrayLogo} alt="Decksray-Logo" />
         </a>
       </div>

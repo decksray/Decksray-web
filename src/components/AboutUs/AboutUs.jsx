@@ -1,4 +1,5 @@
 import { SubscriptionFormMailerLite } from "../SubscriptionForm/SubscriptionFormMailerLite";
+import { ProfileCard } from "../ProfileCard/ProfileCard";
 import "./AboutUs.scss";
 
 export const AboutUs = () => {
@@ -7,6 +8,7 @@ export const AboutUs = () => {
       <SubscriptionFormMailerLite />
       <h2>About Us</h2>
       <div id="about-us-profile-container">
+        {/* <ProfileCard /> */}
         <div className="about-us-profile-card">
           <div className="name-box">
             <h4>Ben Friedman</h4>

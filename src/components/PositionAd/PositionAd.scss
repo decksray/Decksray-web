@@ -1,12 +1,100 @@
 #position-ad {
+  background: radial-gradient(
+      circle at 100% -50%,
+      rgba(38, 180, 56, 1) 5%,
+      rgb(15, 66, 21) 25%,
+      rgba(0, 0, 0, 1) 60%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0% -90%,
+      rgba(38, 180, 56, 1) 5%,
+      rgb(15, 66, 21) 25%,
+      rgba(0, 0, 0, 1) 60%,
+      transparent
+    );
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
-  // padding: 4rem 0;
-  padding-bottom: 4rem;
+
+  p,
+  li {
+    line-height: 1.4rem;
+
+    &.bold {
+      font-weight: bold;
+      color: yellow;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    &:hover {
+      cursor: pointer;
+      color: var(--accent-main-clr);
+      transition: color 0.3s ease-in-out;
+    }
+  }
+
+  #position-ad-logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    img {
+      width: 15rem;
+    }
+  }
+
+  #position-ad-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg-main-clr);
+    border: 1px solid var(--accent-main-clr);
+    max-width: 55rem;
+    width: 50%;
+    padding: 2rem 3rem;
+    row-gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  #position-ad-contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    max-width: 50%;
+    padding: 0 0.5rem;
+
+    #arrow-to-contact {
+      font-size: 2rem;
+      animation: moveUpDown 1.5s infinite ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        color: var(--accent-main-clr);
+        transition: color 0.3s ease-in-out;
+        animation-play-state: paused; /* Pause the animation on hover */
+      }
+    }
+
+    @keyframes moveUpDown {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px); /* Adjust the distance of the movement */
+      }
+    }
+  }
 }
 
 // @media (max-width: 420px) {

@@ -62,6 +62,10 @@
     padding: 2rem 3rem;
     row-gap: 2rem;
     margin: 2rem 0;
+
+    h2 {
+      text-align: center;
+    }
   }
 
   #position-ad-contact-us {
@@ -97,8 +101,24 @@
   }
 }
 
-// @media (max-width: 420px) {
-//   #about-us {
+@media (max-width: 800px) {
+  #position-ad #position-ad-description {
+    width: 85%;
+    margin: 1rem 0;
+  }
 
-//   }
-// }
+  #position-ad #position-ad-contact-us {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 450px) {
+  #position-ad #position-ad-description {
+    width: 90%;
+    padding: 1rem 2rem;
+
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+}

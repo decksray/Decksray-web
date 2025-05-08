@@ -12,8 +12,8 @@ export const PositionAd = () => {
       <div id="position-ad-description">
         <h2>🔥 Werde Teil des Decksray-Teams! 🔥</h2>
         <p>
-          Wir entwickeln einen Sammelkarten-Scanner, der Sammlern hilft, ihre
-          Trading Card Sammlungen (z.B. Magic: The Gathering) effizient zu
+          Wir entwickeln einen <b>Sammelkarten-Scanner</b>, der Sammlern hilft,
+          ihre Trading Card Sammlungen (z.B. Magic: The Gathering) effizient zu
           digitalisieren. Unser Ziel ist es, die Verwaltung von Sammelkarten zu
           vereinfachen und den Nutzern eine benutzerfreundliche, zeitsparende
           und kostengünstige Lösung zu bieten. <br />
@@ -60,7 +60,7 @@ export const PositionAd = () => {
 
       <div id="position-ad-contact-us">
         <p>
-          👉 Interesse? Dann schreib und gerne eine E-Mail an{" "}
+          👉 <b>Interesse?</b> Dann schreib und gerne eine E-Mail an{" "}
           <a className="email-link" href="mailto:info@decksray.com">
             info@decksray.com
           </a>{" "}

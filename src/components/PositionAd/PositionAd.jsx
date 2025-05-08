@@ -32,8 +32,9 @@ export const PositionAd = () => {
           .
         </p>
         <p>
-          Unser Team aus drei Leuten sucht eine/n 4. Partner/in, der uns bei
-          folgenden Aufgaben unterstützt:
+          Unser Team aus drei Leuten sucht eine/n 4. Partner/in in <b>Berlin</b>
+          , der/die Grundkenntnisse in folgenden (aber nicht unbedingt allen)
+          Bereichen hat:
         </p>
         <ul>
           <li>🛠️ Mechanisches Design & CAD</li>
@@ -42,14 +43,17 @@ export const PositionAd = () => {
           <li>🖥️ ... sonstige IT Kenntnisse</li>
         </ul>
         <p>
+          Viel wichtiger für uns ist, dass du eine gewisse Leidenschaft für so
+          ein Projekt mitbringst.
+        </p>
+        <p>
           Wir treffen uns wöchentlich in einem Makerspace, wo uns alle möglichen
           Werkzeuge und Gerätschaften zur Vefügung stehen.
         </p>
         <p>
-          Wenn du also Leidenschaft für den Aufbau von Projekten mitbringst,
-          Trading Cards oder nerdige Projekte liebst und Teil eines engagierten,
-          lernorientierten Teams sein möchtest – dann bist du bei uns genau
-          richtig!
+          Wenn du dich also angesprochen fühlst, Trading Cards oder nerdige
+          Projekte liebst und Teil eines engagierten, lernorientierten Teams
+          sein möchtest – dann bist du bei uns genau richtig!
         </p>
         <p className="bold">
           Wichtig: Dies ist kein Job oder eine bezahlte Stelle, sondern eine

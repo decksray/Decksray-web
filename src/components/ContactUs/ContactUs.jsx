@@ -80,7 +80,7 @@ export const ContactUs = () => {
             <p className="state-message">{stateMessage}</p>
           ) : (
             <button type="submit" value="Send" disabled={isSubmitting}>
-              Subscribe
+              Send Message
             </button>
           )}
         </form>

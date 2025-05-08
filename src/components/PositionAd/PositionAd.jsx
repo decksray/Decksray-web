@@ -10,7 +10,7 @@ export const PositionAd = () => {
         </a>
       </div>
       <div id="position-ad-description">
-        <h2>🔥 Werde Teil des Decksray Teams! 🔥</h2>
+        <h2>🔥 Werde Teil des Decksray-Teams! 🔥</h2>
         <p>
           Wir entwickeln einen Sammelkarten-Scanner, der Sammlern hilft, ihre
           Trading Card Sammlungen (z.B. Magic: The Gathering) effizient zu
@@ -32,7 +32,7 @@ export const PositionAd = () => {
           .
         </p>
         <p>
-          Unser Team aus drei Leuten sucht einen 4. Partner, der uns bei
+          Unser Team aus drei Leuten sucht eine/n 4. Partner/in, der uns bei
           folgenden Aufgaben unterstützt:
         </p>
         <ul>

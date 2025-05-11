@@ -33,6 +33,7 @@ export const AboutUs = () => {
         <ProfileCard
           name={"JuDa"}
           manaCost={"1"}
+          imgPath={"/assets/ppl/unknown.png"}
           cardType={"Creature - Electro Software Artificer"}
           descr={"JuDa recently joined us. More details coming soon! :)"}
           powerAndToughness={"0/3"}

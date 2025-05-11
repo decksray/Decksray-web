@@ -131,16 +131,14 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     border: 2px solid var(--accent-dark-clr);
     border-radius: 0.5rem;
     padding: 0.2rem 0.9rem;
+    content: var(--powerAndToughness);
   }
 
-  .text-box.ben::after {
-    content: "3/4";
-  }
-  .text-box.david::after {
-    content: "7/1";
-  }
+  // .text-box.ben::after {
+  //   content: var(--powerAndToughness);
+  // }
 }

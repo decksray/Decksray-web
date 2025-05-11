@@ -1,34 +1,58 @@
 import "./ProfileCard.scss";
 
-export const ProfileCard = () => {
-  <div className="about-us-profile-card">
-    <div className="name-box">
-      <h4>Ben Friedman</h4>
-      <div className="mana-cost">
-        <img src="/assets/mana-symbols/2.png" alt="2 mana symbol" />
-        <img src="/assets/mana-symbols/B.png" alt="black mana symbol" />
-        <img src="/assets/mana-symbols/B.png" alt="black mana symbol" />
+export const ProfileCard = ({
+  name,
+  manaCost,
+  imgPath,
+  cardType,
+  descr,
+  powerAndToughness,
+}) => {
+  ProfileCard.defaultProps = {
+    name: "NAME PLACEHOLDER",
+    manaCost: "1RB",
+    imgPath: "/assets/ppl/unknown.png",
+    cardType: "Creature - Human",
+    descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    powerAndToughness: "1/1",
+  };
+
+  const validSymbols = ["1", "2", "B", "R"];
+  const manaCostArr = manaCost
+    .split("")
+    .filter((symbol) => validSymbols.includes(symbol));
+
+  return (
+    <div className="about-us-profile-card">
+      <div className="name-box">
+        <h4>{name}</h4>
+        <div className="mana-cost">
+          {manaCostArr.map((symbol, i) => (
+            <img
+              key={`${symbol} + ${i}`}
+              src={`/assets/mana-symbols/${symbol}.png`}
+              alt={`${symbol} mana symbol`}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="art-box">
+        <img src={imgPath} alt="photo of person" />
+      </div>
+      <div className="type-box">
+        <h5>{cardType}</h5>
+        <div className="set-symbol">
+          <img src="/assets/favicon/Watermark Small.png" alt="" />
+        </div>
+      </div>
+      <div
+        className="text-box"
+        style={{ "--powerAndToughness": `"${powerAndToughness}"` }}
+      >
+        <div className="text-box-inner">
+          <p>{descr}</p>
+        </div>
       </div>
     </div>
-    <div className="art-box">
-      <img src="/assets/ppl/Ben.jpg" alt="photo of ben friedman" />
-    </div>
-    <div className="type-box">
-      <h5>Creature - Human Developer</h5>
-      <div className="set-symbol">
-        <img src="/assets/favicon/Watermark Small.png" alt="" />
-      </div>
-    </div>
-    <div className="text-box ben">
-      <div className="text-box-inner">
-        <p>
-          I'm a passionate "Magic" player and collector, always ready for a good
-          EDH game. After years of experience in finance, I've recently chosen a
-          new career path. As a web developer I bring my love for coding to
-          life. Whether it's casting spells or writing code, I'm always up for a
-          new challenge!
-        </p>
-      </div>
-    </div>
-  </div>;
+  );
 };

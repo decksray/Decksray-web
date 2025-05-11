@@ -48,7 +48,7 @@ export const PositionAd = () => {
         </p>
         <p>
           Wir treffen uns wöchentlich in einem Makerspace, wo uns alle möglichen
-          Werkzeuge und Gerätschaften zur Vefügung stehen.
+          Werkzeuge und Gerätschaften zur Verfügung stehen.
         </p>
         <p>
           Wenn du dich also angesprochen fühlst, Trading Cards oder nerdige
@@ -64,7 +64,7 @@ export const PositionAd = () => {
 
       <div id="position-ad-contact-us">
         <p>
-          👉 <b>Interesse?</b> Dann schreib und gerne eine E-Mail an{" "}
+          👉 <b>Interesse?</b> Dann schreib uns gerne eine E-Mail an{" "}
           <a className="email-link" href="mailto:info@decksray.com">
             info@decksray.com
           </a>{" "}

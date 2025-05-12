@@ -71,6 +71,17 @@
       p {
         line-height: 1.5rem;
       }
+
+      a {
+        text-decoration: underline;
+        font-weight: bold;
+
+        &:hover {
+          cursor: pointer;
+          color: var(--accent-main-clr);
+          transition: color 0.3s ease-in-out;
+        }
+      }
     }
   }
 

@@ -1,5 +1,6 @@
 import { SubscriptionFormMailerLite } from "../SubscriptionForm/SubscriptionFormMailerLite";
 import { ProfileCard } from "../ProfileCard/ProfileCard";
+
 import "./AboutUs.scss";
 
 export const AboutUs = () => {
@@ -32,11 +33,26 @@ export const AboutUs = () => {
 
         <ProfileCard
           name={"JuDa"}
-          manaCost={"1"}
+          manaCost={"2"}
           imgPath={"/assets/ppl/unknown.png"}
           cardType={"Creature - Electro Software Artificer"}
           descr={"JuDa recently joined us. More details coming soon! :)"}
-          powerAndToughness={"0/3"}
+          powerAndToughness={"0/5"}
+        />
+
+        <ProfileCard
+          name={"Your name could be here"}
+          manaCost={"1"}
+          imgPath={"/assets/ppl/unknown.png"}
+          cardType={"Creature - New Partner"}
+          descr={
+            <>
+              If you live in or near Berlin and are interested in joining us as
+              a partner in this project, click <a href="/join">here</a> to find
+              out more.
+            </>
+          }
+          powerAndToughness={"1/1"}
         />
       </div>
     </section>

@@ -34,9 +34,11 @@ export const AboutUs = () => {
         <ProfileCard
           name={"JuDa"}
           manaCost={"2"}
-          imgPath={"/assets/ppl/unknown.png"}
-          cardType={"Creature - Electro Software Artificer"}
-          descr={"JuDa recently joined us. More details coming soon! :)"}
+          imgPath={"/assets/ppl/JuDa.png"}
+          cardType={"Creature - Human Electro Artificer"}
+          descr={
+            "JuDa is a passionate developer who lives and breathes software. He dreams of electronics and zip files, and spends his time building and experimenting with embedded systems. Whether it's writing low-level code or tinkering with hardware, JuDa is always in his element."
+          }
           powerAndToughness={"0/5"}
         />
 

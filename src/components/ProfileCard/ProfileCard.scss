@@ -148,8 +148,15 @@
     padding: 0.2rem 0.9rem;
     content: var(--powerAndToughness);
   }
+}
 
-  // .text-box.ben::after {
-  //   content: var(--powerAndToughness);
-  // }
+@media (max-width: 400px) {
+  .about-us-profile-card {
+    .text-box {
+      .text-box-inner {
+        padding: 0 0.5rem;
+        height: 110%;
+      }
+    }
+  }
 }

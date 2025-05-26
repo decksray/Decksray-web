@@ -35,7 +35,7 @@ export const AboutUs = () => {
           name={"JuDa"}
           manaCost={"2"}
           imgPath={"/assets/ppl/JuDa.png"}
-          cardType={"Creature - Human Electro Artificer"}
+          cardType={"Creature - Human Electromancer"}
           descr={
             "JuDa is a passionate developer who lives and breathes software. He dreams of electronics and zip files, and spends his time building and experimenting with embedded systems. Whether it's writing low-level code or tinkering with hardware, JuDa is always in his element."
           }

@@ -1,0 +1,78 @@
+#contact-us {
+  background: radial-gradient(
+    circle at 15% 150%,
+    rgba(38, 180, 56, 1) 5%,
+    rgb(15, 66, 21) 25%,
+    rgba(0, 0, 0, 1) 60%
+  );
+  min-height: 84vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  gap: 2rem;
+
+  #contact-us-header {
+    text-align: center;
+  }
+
+  #contact-form {
+    height: 25.6rem; //leaves room for stateMessage
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+    * {
+      width: 100%;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+
+      input,
+      textarea {
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+      }
+
+      textarea {
+        resize: none;
+        font-family: "Lato", Helvetica, Arial, sans-serif;
+        font-size: 0.9rem;
+      }
+    }
+
+    button {
+      padding: 0.2rem;
+      font-size: 1rem;
+      width: 7rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      background-color: var(--accent-main-clr);
+      font-weight: bold;
+      width: 100%;
+    }
+
+    .state-message {
+      color: var(--accent-main-clr);
+      width: 7rem;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-height: 700px) {
+  #contact-us-section {
+    gap: 1rem;
+
+    #contact-form {
+      textarea {
+        height: 10rem;
+      }
+    }
+  }
+}

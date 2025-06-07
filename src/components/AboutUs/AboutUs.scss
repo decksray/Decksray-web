@@ -1,0 +1,37 @@
+#about-us {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 4rem;
+  padding-bottom: 4rem;
+
+  #about-us-profile-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  #about-us {
+    #about-us-profile-container {
+      padding: 0 1.1rem;
+
+      .about-us-profile-card {
+        //scale: 0.9;
+
+        p {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+}

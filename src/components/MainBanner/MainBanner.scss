@@ -1,0 +1,120 @@
+#main-banner {
+  --_banner-height: calc(100vh - 86px);
+  min-height: var(--_banner-height);
+  width: 100%;
+  display: flex;
+
+  #main-banner-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 4rem 2rem;
+
+    #main-banner-text-1 {
+      --_h1-font-size: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      gap: 0.5rem;
+
+      h1 {
+        font-size: var(--_h1-font-size);
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        h1 {
+          font-size: var(--_h1-font-size);
+        }
+
+        img {
+          height: var(--_h1-font-size);
+        }
+      }
+    }
+
+    #main-banner-text-2 {
+      h3 {
+        font-weight: normal;
+        width: 60%;
+        min-width: 20rem;
+        line-height: 1.5rem;
+      }
+
+      p {
+        color: grey;
+      }
+    }
+
+    #main-banner-text-btns {
+      display: flex;
+      gap: 1rem;
+
+      button {
+        padding: 0.2rem;
+        font-size: 1rem;
+        width: 7rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        background-color: var(--accent-main-clr);
+        font-weight: bold;
+
+        a {
+          color: #000;
+        }
+      }
+    }
+  }
+
+  #main-banner-img {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 2rem 1rem;
+
+    img {
+      height: calc(var(--_banner-height) * 0.9);
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #main-banner {
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    width: 100%;
+
+    #main-banner-text {
+      width: 100%;
+      height: fit-content;
+      padding: 2rem;
+
+      #main-banner-text-1 {
+        --_h1-font-size: 3rem;
+      }
+    }
+
+    #main-banner-img {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #main-banner {
+    #main-banner-text {
+      #main-banner-text-1 {
+        --_h1-font-size: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap");
+
+:root {
+  --font-main-clr: #fff;
+  --bg-main-clr: #000;
+  --accent-main-clr: #11dc2b;
+  --accent-dark-clr: #0fb124;
+}
+
+body {
+  color: var(--font-main-clr);
+  background-color: var(--bg-main-clr);
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+#bg-wrapper {
+  background: radial-gradient(
+    circle at 60% 30%,
+    rgba(38, 180, 56, 1) 0%,
+    rgb(15, 66, 21) 25%,
+    rgba(0, 0, 0, 1) 60%
+  );
+}

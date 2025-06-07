@@ -1,0 +1,84 @@
+.subscription-container {
+  border-top: 1px solid var(--accent-main-clr);
+  border-bottom: 1px solid var(--accent-main-clr);
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)),
+    url("/assets/mtg collection.jpg");
+  background-position: 100% 100%;
+  background-size: 40%;
+
+  .blur-wrapper {
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    padding: 1.5rem;
+    box-shadow: inset 0px 0px 40px 15px #000;
+
+    h2,
+    .subscription-form {
+      text-align: center;
+      padding: 0.5rem;
+      width: 100%;
+    }
+
+    h2 {
+      color: var(--accent-main-clr);
+    }
+
+    .subscription-form {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      input {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        &:focus {
+          outline: 1px var(--accent-main-clr) solid;
+        }
+      }
+
+      input:nth-child(2) {
+        width: 17rem;
+      }
+
+      button {
+        padding: 0.2rem;
+        font-size: 1rem;
+        width: 7rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        background-color: var(--accent-main-clr);
+        font-weight: bold;
+      }
+
+      .newsletter-state-message {
+        color: var(--accent-main-clr);
+        width: 7rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .subscription-container {
+    animation: bg-scroll-move linear forwards;
+    animation-timeline: scroll();
+
+    @keyframes bg-scroll-move {
+      to {
+        background-position: 100% 0%;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .subscription-container {
+    background-size: 110%;
+  }
+}

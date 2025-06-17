@@ -4,6 +4,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./pages/App.jsx";
 import JoinUs from "./pages/JoinUs.jsx";
 import "./main.css";
+import { Navigate } from "react-router-dom";
+import "./i18n";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -11,6 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="" element={<App />} />
         <Route path="/join" element={<JoinUs />} />
+        <Route path="/qr" element={<Navigate to="/join" replace />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

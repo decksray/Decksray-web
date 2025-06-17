@@ -49,9 +49,14 @@ export const AboutUs = () => {
           cardType={"Creature - New Partner"}
           descr={
             <>
-              If you live in or near Berlin and are interested in joining us as
-              a partner in this project, click <a href="/join">here</a> to find
-              out more.
+              If you live in or near Berlin, Germany and are interested in
+              joining us as a partner in this project, click{" "}
+              <a href="/join">
+                <b>
+                  <u>here</u>
+                </b>
+              </a>{" "}
+              to find out more.
             </>
           }
           powerAndToughness={"1/1"}

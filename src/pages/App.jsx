@@ -1,4 +1,5 @@
 import "./App.scss";
+import "flag-icons/css/flag-icons.min.css";
 import { AboutUs } from "../components/AboutUs/AboutUs";
 import { ContactUs } from "../components/ContactUs/ContactUs";
 import { HowItWorks } from "../components/HowItWorks/HowItWorks";

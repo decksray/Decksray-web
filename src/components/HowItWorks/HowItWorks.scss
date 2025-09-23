@@ -13,14 +13,12 @@
     flex-wrap: wrap;
     gap: 2rem;
 
-    #how-it-works-col-1,
-    #how-it-works-col-2,
-    #how-it-works-col-3 {
+    .how-it-works-col {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 30%;
-      min-width: 35rem;
+      //min-width: 15rem;
       gap: 1rem;
 
       .how-it-works-icon {
@@ -31,6 +29,7 @@
         border-radius: 0.5rem;
         object-fit: cover;
         aspect-ratio: 4/3;
+        width: 100%;
       }
 
       p {
@@ -40,7 +39,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1500px) {
   #how-it-works {
     height: fit-content;
     padding: 2rem 0;
@@ -49,10 +48,8 @@
       flex-direction: column;
       align-items: center;
 
-      #how-it-works-col-1,
-      #how-it-works-col-2,
-      #how-it-works-col-3 {
-        width: 90%;
+      .how-it-works-col {
+        width: 70%;
       }
     }
   }

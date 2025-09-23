@@ -55,7 +55,9 @@
   #in-action {
     #in-action-gallery {
       iframe {
-        aspect-ratio: 9 / 16;
+        height: auto;
+        width: 100%;
+        margin: 0 1.5rem;
       }
     }
   }

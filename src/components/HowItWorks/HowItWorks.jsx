@@ -5,7 +5,7 @@ export const HowItWorks = () => {
     <section id="how-it-works">
       <h2>How it Works</h2>
       <div id="how-it-works-container">
-        <div id="how-it-works-col-1">
+        <div className="how-it-works-col">
           <img
             className="how-it-works-icon"
             src="/assets/info-icons/SCAN.png"
@@ -25,7 +25,7 @@ export const HowItWorks = () => {
           </p>
         </div>
 
-        <div id="how-it-works-col-2">
+        <div className="how-it-works-col">
           <img
             className="how-it-works-icon"
             src="/assets/info-icons/FILE.png"
@@ -45,7 +45,7 @@ export const HowItWorks = () => {
           </p>
         </div>
 
-        <div id="how-it-works-col-3">
+        <div className="how-it-works-col">
           <img
             className="how-it-works-icon"
             src="/assets/info-icons/PLAN.png"

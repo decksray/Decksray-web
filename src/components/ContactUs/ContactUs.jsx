@@ -1,6 +1,6 @@
 import "./ContactUs.scss";
 import { useState } from "react";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { SubscriptionFormMailerLite } from "../SubscriptionForm/SubscriptionFormMailerLite";
 
@@ -45,7 +45,7 @@ export const ContactUs = () => {
       <section id="contact-us">
         <div id="contact-us-header">
           <h2>Contact Us</h2>
-          <h3>We'd love to hear from you.</h3>
+          <h3>We&apos;d love to hear from you.</h3>
         </div>
 
         <form id="contact-form" ref={form} onSubmit={sendEmail}>

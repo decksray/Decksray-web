@@ -56,7 +56,7 @@ export const AboutUs = () => {
                   <u>here</u>
                 </b>
               </a>{" "}
-              to find out more.
+              to find out more ...
             </>
           }
           powerAndToughness={"1/1"}

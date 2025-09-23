@@ -17,11 +17,15 @@ export const PositionAd = () => {
         <div id="position-ad-lang-btns">
           <span
             onClick={() => i18n.changeLanguage("en")}
-            class={"fi fi-gb" + (i18n.language === "en" ? " active-lng" : "")}
+            className={
+              "fi fi-gb" + (i18n.language === "en" ? " active-lng" : "")
+            }
           ></span>
           <span
             onClick={() => i18n.changeLanguage("de")}
-            class={"fi fi-de" + (i18n.language === "de" ? " active-lng" : "")}
+            className={
+              "fi fi-de" + (i18n.language === "de" ? " active-lng" : "")
+            }
           ></span>
         </div>
 

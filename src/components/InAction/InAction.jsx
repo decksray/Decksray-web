@@ -1,4 +1,6 @@
 import "./InAction.scss";
+import img2 from "/assets/card-scanner/Decksray_scanner_3.jpg";
+import img3 from "/assets/card-scanner/Decksray_scanner_MakerFaire.JPG";
 
 export const InAction = () => {
   return (
@@ -9,7 +11,8 @@ export const InAction = () => {
       </div>
       <div id="in-action-gallery">
         <img
-          src="/assets/card-scanner/Decksray_scanner_2.png"
+          src={img3}
+          className="in-action-img-1"
           alt="decksray card scanner machine"
           loading="lazy"
         />
@@ -23,7 +26,8 @@ export const InAction = () => {
         />
 
         <img
-          src="/assets/card-scanner/Decksray_scanner_3.jpg"
+          src={img2}
+          className="in-action-img-2"
           alt="decksray card scanner machine"
           loading="lazy"
         />

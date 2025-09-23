@@ -7,7 +7,7 @@ export const MainNavBar = () => {
   const [showMenuDropdown, setShowMenuDropDown] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", (event) => {
+    window.addEventListener("scroll", () => {
       let scrollPos = window.scrollY;
       if (scrollPos === 0) {
         document.getElementById("main-nav-links").classList.remove("popped");

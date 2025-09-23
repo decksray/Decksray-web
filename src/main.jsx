@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="" element={<App />} />
         <Route path="/join" element={<JoinUs />} />
-        <Route path="/qr" element={<Navigate to="/join" replace />} />
+        <Route path="/qr" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

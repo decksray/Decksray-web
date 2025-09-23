@@ -1,66 +1,57 @@
 import "./SubscriptionForm.scss";
-import { useState } from "react";
-import React, { useRef } from "react";
+import { useCallback, useState } from "react";
+import { useRef } from "react";
 
 export const SubscriptionFormMailerLite = () => {
   const form = useRef();
-  const apiKey = import.meta.env.VITE_MAILERLITE_API_TOKEN;
-  const groupId = import.meta.env.VITE_MAILERLITE_GROUP_ID;
-
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [stateMessage, setStateMessage] = useState(null);
 
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
 
-  const data = {
-    email: email,
-    fields: { name: name },
-    groups: [groupId],
-    status: "active",
-  };
+  const handleSubmit = useCallback(
+    async (e) => {
+      e.preventDefault();
+      setIsSubmitting(true);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+      const resetStateMessage = () => {
+        setTimeout(() => {
+          setStateMessage(null);
+          setIsSubmitting(false);
+          e.target.reset();
+        }, 7000);
+      };
 
-    const resetStateMessage = () => {
-      setTimeout(() => {
-        setStateMessage(null);
-        setIsSubmitting(false);
-        e.target.reset();
-      }, 7000);
-    };
-
-    try {
-      const response = await fetch(
-        "https://connect.mailerlite.com/api/subscribers",
-        {
+      try {
+        const body = new URLSearchParams();
+        body.append("name", name);
+        body.append("email", email);
+        const response = await fetch("/cgi-bin/subscribe2newsletter.py", {
           method: "POST",
-          headers: {
-            Authorization: `Bearer ${apiKey}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
+          body,
+        });
+
+        const result = await response.text();
+
+        if (response.ok && result.trim() === "OK") {
+          setStateMessage("SUCCESS! 🎉");
+          setEmail("");
+          setName("");
+        } else {
+          setStateMessage(
+            result.message || "Something went wrong. Please try again!"
+          );
         }
-      );
-
-      const result = await response.json();
-
-      if (response.ok) {
-        setStateMessage("SUCCESS! 🎉");
-        setEmail("");
-        setName("");
-      } else {
-        setStateMessage(result.message || "Something went wrong. Try again!");
+      } catch (error) {
+        setStateMessage("Error: Unable to subscribe.");
+        console.error("Error:", error);
       }
-    } catch (error) {
-      setStateMessage("Error: Unable to subscribe.");
-      console.error("Error:", error);
-    }
 
-    resetStateMessage();
-  };
+      resetStateMessage();
+    },
+    [name, email]
+  );
 
   return (
     <div className="subscription-container">

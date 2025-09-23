@@ -18,13 +18,13 @@
   }
 
   #contact-form {
-    height: 25.6rem; //leaves room for stateMessage
+    min-height: 25.6rem; //leaves room for stateMessage
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 1rem;
 
-    * {
+    & > * {
       width: 100%;
     }
 

@@ -10,6 +10,7 @@
   #how-it-works-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
 
     #how-it-works-col-1,
@@ -19,6 +20,7 @@
       flex-direction: column;
       align-items: center;
       width: 30%;
+      min-width: 35rem;
       gap: 1rem;
 
       .how-it-works-icon {

@@ -42,6 +42,12 @@ export const MainFooter = () => {
         <a href="https://bsky.app/profile/decksray.com" target="_blank">
           <i className="fa-brands fa-bluesky" />
         </a>
+        <a
+          href="https://www.instagram.com/decksray.com_tcg_scanner/"
+          target="_blank"
+        >
+          <i className="fa-brands fa-instagram" />
+        </a>
 
         {/* coming soon!!!*/}
 
@@ -54,9 +60,7 @@ export const MainFooter = () => {
         {/* <a href="#contact-us">
           <i className="fa-brands fa-patreon" />
         </a>
-        <a href="#contact-us">
-          <i className="fa-brands fa-instagram" />
-        </a>
+        
         <a href="#contact-us">
           <i className="fa-brands fa-facebook" />
         </a>

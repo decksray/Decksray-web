@@ -49,6 +49,10 @@ export const MainFooter = () => {
           <i className="fa-brands fa-instagram" />
         </a>
 
+        <a href="https://www.linkedin.com/company/decksray" target="_blank">
+          <i className="fa-brands fa-linkedin" />
+        </a>
+
         {/* coming soon!!!*/}
 
         {/* <a href="#contact-us">

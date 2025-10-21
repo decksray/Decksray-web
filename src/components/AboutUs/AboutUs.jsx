@@ -42,7 +42,7 @@ export const AboutUs = () => {
           powerAndToughness={"0/5"}
         />
 
-        <ProfileCard
+        {/* <ProfileCard
           name={"Your name could be here"}
           manaCost={"1"}
           imgPath={"/assets/ppl/unknown.png"}
@@ -60,6 +60,15 @@ export const AboutUs = () => {
             </>
           }
           powerAndToughness={"1/1"}
+        /> */}
+
+        <ProfileCard
+          name={"<Name>"}
+          manaCost={"1"}
+          imgPath={"/assets/ppl/unknown.png"}
+          cardType={"Creature - <Type>"}
+          descr={"<Description>"}
+          powerAndToughness={"*/*"}
         />
       </div>
     </section>

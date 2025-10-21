@@ -59,7 +59,7 @@ export const MainFooter = () => {
           <i className="fa-brands fa-kickstarter" />
         </a> */}
 
-        {/* coming in the future? */}
+        {/* coming soon?? */}
 
         {/* <a href="#contact-us">
           <i className="fa-brands fa-patreon" />

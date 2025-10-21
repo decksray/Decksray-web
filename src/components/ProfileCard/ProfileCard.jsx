@@ -42,7 +42,7 @@ export const ProfileCard = ({
       <div className="type-box">
         <h5>{cardType}</h5>
         <div className="set-symbol">
-          <img src="/assets/favicon/Watermark Small.png" alt="" />
+          <img src="/assets/favicon/watermark_small.png" alt="" />
         </div>
       </div>
       <div

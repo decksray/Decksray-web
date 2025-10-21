@@ -50,6 +50,9 @@
     align-items: center;
 
     .set-symbol {
+      display: flex;
+      align-items: center;
+
       img {
         object-fit: cover;
         width: 5rem;

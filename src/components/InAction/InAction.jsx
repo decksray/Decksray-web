@@ -6,8 +6,8 @@ export const InAction = () => {
   return (
     <section id="in-action">
       <div id="in-action-title">
-        <h2>In Action</h2>
-        <h5>(Prototype 07)</h5>
+        <h2>Decksray in Action</h2>
+        {/* <h5>(Prototype 07)</h5> */}
       </div>
       <div id="in-action-gallery">
         <img

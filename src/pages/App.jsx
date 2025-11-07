@@ -7,6 +7,7 @@ import { InAction } from "../components/InAction/InAction";
 import { MainBanner } from "../components/MainBanner/MainBanner";
 import { MainFooter } from "../components/MainFooter/MainFooter";
 import { MainNavBar } from "../components/MainNavBar/MainNavBar";
+import { News } from "../components/News/News";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         </div>
         <InAction />
         <AboutUs />
+
         <ContactUs />
       </main>
       <footer>

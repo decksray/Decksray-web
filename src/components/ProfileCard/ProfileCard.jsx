@@ -8,16 +8,7 @@ export const ProfileCard = ({
   descr,
   powerAndToughness,
 }) => {
-  ProfileCard.defaultProps = {
-    name: "NAME PLACEHOLDER",
-    manaCost: "1RB",
-    imgPath: "/assets/ppl/unknown.png",
-    cardType: "Creature - Human",
-    descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    powerAndToughness: "1/1",
-  };
-
-  const validSymbols = ["1", "2", "B", "R"];
+  const validSymbols = ["1", "2", "B", "R", "G", "U", "W"];
   const manaCostArr = manaCost
     .split("")
     .filter((symbol) => validSymbols.includes(symbol));

@@ -13,9 +13,9 @@ export const AboutUs = () => {
           name={"Ben"}
           manaCost={"2BB"}
           imgPath={"/assets/ppl/Ben.jpg"}
-          cardType={"Creature - Human Developer"}
+          cardType={"Creature - Pathweaver"}
           descr={
-            "Ben is a passionate Magic player and collector, always ready for a good EDH game. After years of experience in finance, he's recently chosen a new career path. As a web developer he brings his love for coding to life. Whether it's casting spells or writing code, he's always up for a new challenge!"
+            "Ben is a passionate Magic player and collector, always ready for a good EDH game. After years of experience in finance, he’s now leading Decksray’s journey from idea to reality. With an eye for detail and a drive for progress, he keeps the team aligned and the project moving."
           }
           powerAndToughness={"3/4"}
         />
@@ -26,7 +26,7 @@ export const AboutUs = () => {
           imgPath={"/assets/ppl/David.jpg"}
           cardType={"Creature - Human Tinkerer"}
           descr={
-            "As a die-hard red Magic: The Gathering fan I love diving into the world of cards. With years of experience in metalworking and construction, I can handle a hammer and wrench. Nowadays, I'm having a blast as a mechatronics engineer, using my love for tech to create some cool stuff!"
+            "A die-hard red MTG player, David brings passion and precision to Decksray. With years of experience in metalworking and construction, he knows his way around every tool. Now, as a mechatronics engineer, he channels that same creativity into building the mechanical systems that power Decksray."
           }
           powerAndToughness={"7/1"}
         />
@@ -41,7 +41,7 @@ export const AboutUs = () => {
           }
           powerAndToughness={"0/5"}
         />
-
+        {/* -- Job ad -- */}
         {/* <ProfileCard
           name={"Your name could be here"}
           manaCost={"1"}
@@ -63,11 +63,33 @@ export const AboutUs = () => {
         /> */}
 
         <ProfileCard
-          name={"<Name>"}
+          name={"Andi"}
+          manaCost={"WUG"}
+          imgPath={"/assets/ppl/Andi.png"}
+          cardType={"Creature - Ether Mechanic"}
+          descr={
+            "Andi breathes life into the mechanical heart of Decksray, where engineering precision meets a touch of magic. From detailed CAD modeling to 3D printing and fine-tuning the scanner’s motion system, Andi blends craftsmanship with innovation — the bridge between magic and machinery."
+          }
+          powerAndToughness={"3/3"}
+        />
+        <ProfileCard
+          name={"Ghassen"}
           manaCost={"1"}
-          imgPath={"/assets/ppl/unknown.png"}
-          cardType={"Creature - <Type>"}
-          descr={"<Description>"}
+          imgPath={"/assets/ppl/Ghassen.jpeg"}
+          cardType={"Creature - Digital Artificer"}
+          descr={
+            "Ghassen shapes the intelligence behind Decksray's card recognition. Trained in technical computer science and embedded systems, he builds the software that allows Decksray to see, understand, and learn. With algorithmic mastery and creative engineering, Ghassen gives the machine its sight."
+          }
+          powerAndToughness={"*/*"}
+        />
+        <ProfileCard
+          name={"Wadi"}
+          manaCost={"1"}
+          imgPath={"/assets/ppl/Wadi.jpeg"}
+          cardType={"Creature - Digital Artificer"}
+          descr={
+            "Wadi brings the card recognition of Decksray to life. With a background in technical computer science and embedded systems, he turns complex algorithms into real-time results. From optimizing image processing to connecting sensors and hardware, Wadi bridges the physical and digital worlds."
+          }
           powerAndToughness={"*/*"}
         />
       </div>

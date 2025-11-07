@@ -71,6 +71,9 @@ export const MainNavBar = () => {
           <a href="#about-us">
             <li>About Us</li>
           </a>
+          <a href="#news">
+            <li>News</li>
+          </a>
           <a href="#contact-us">
             <li>Contact</li>
           </a>

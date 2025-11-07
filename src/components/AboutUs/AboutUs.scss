@@ -7,37 +7,40 @@
   row-gap: 4rem;
 
   #about-us-profile-container {
-    width: 100%;
+    width: 80%;
     align-items: center;
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    //gap: 12px;
     justify-items: center;
     row-gap: 3rem;
   }
 }
 
-@media (max-width: 1750px) and (min-width: 601px) {
+@media (max-width: 1750px) {
   #about-us {
     #about-us-profile-container {
+      width: 100%;
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
 }
 
-@media (max-width: 1300px) and (min-width: 601px) {
+@media (max-width: 1300px) {
   #about-us {
     #about-us-profile-container {
+      width: 90%;
+
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   #about-us {
     #about-us-profile-container {
-      //grid-template-columns: 1fr;
+      width: 100%;
 
       .about-us-profile-card {
         scale: 0.9;
@@ -50,10 +53,12 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   #about-us {
     #about-us-profile-container {
       grid-template-columns: 1fr;
+      row-gap: 1rem;
+      padding: 0rem;
 
       .about-us-profile-card {
         scale: 1;
@@ -66,7 +71,6 @@
   #about-us {
     #about-us-profile-container {
       padding: 0;
-
       .about-us-profile-card {
         scale: 0.8;
       }

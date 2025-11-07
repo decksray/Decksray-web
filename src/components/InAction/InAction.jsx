@@ -5,7 +5,9 @@ import img3 from "/assets/card-scanner/Decksray_scanner_MakerFaire.JPG";
 export const InAction = () => {
   return (
     <section id="in-action">
-      <h2>Here it is — the Decksray machine in action.</h2>
+      <h2 className="section-header">
+        Here it is — the Decksray machine in action.
+      </h2>
       <p className="section-decription">
         It scans cards, recognizes them, and does exactly what we always wished
         existed. Check it out!

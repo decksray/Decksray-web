@@ -3,7 +3,7 @@ import "./HowItWorks.scss";
 export const HowItWorks = () => {
   return (
     <section id="how-it-works">
-      <h2>How Decksray Works</h2>
+      <h2 className="section-header">How Decksray Works</h2>
       <p className="section-decription">
         Pop in your cards, hit scan, and watch Decksray do the rest. It reads
         every card, creates a file for you, and gets your collection ready to

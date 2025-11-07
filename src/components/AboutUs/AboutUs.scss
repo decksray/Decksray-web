@@ -74,7 +74,7 @@
 @media (max-width: 440px) {
   #about-us {
     #about-us-profile-container {
-      padding: 0;
+      row-gap: 0;
       .about-us-profile-card {
         scale: 0.8;
       }

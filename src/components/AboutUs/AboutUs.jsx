@@ -33,13 +33,13 @@ export const AboutUs = () => {
 
         <ProfileCard
           name={"JuDa"}
-          manaCost={"2"}
+          manaCost={"5"}
           imgPath={"/assets/ppl/JuDa.png"}
           cardType={"Creature - Human Electromancer"}
           descr={
             "JuDa is a passionate developer who lives and breathes software. He dreams of electronics and zip files, and spends his time building and experimenting with embedded systems. Whether it's writing low-level code or tinkering with hardware, JuDa is always in his element."
           }
-          powerAndToughness={"0/5"}
+          powerAndToughness={"0/9"}
         />
         {/* -- Job ad -- */}
         {/* <ProfileCard
@@ -70,27 +70,27 @@ export const AboutUs = () => {
           descr={
             "Andi breathes life into the mechanical heart of Decksray, where engineering precision meets a touch of magic. From detailed CAD modeling to 3D printing and fine-tuning the scanner’s motion system, Andi blends craftsmanship with innovation — the bridge between magic and machinery."
           }
-          powerAndToughness={"3/3"}
+          powerAndToughness={"2/5"}
         />
         <ProfileCard
           name={"Ghassen"}
-          manaCost={"1"}
+          manaCost={"XUR"}
           imgPath={"/assets/ppl/Ghassen.jpeg"}
           cardType={"Creature - Digital Artificer"}
           descr={
             "Ghassen shapes the intelligence behind Decksray's card recognition. Trained in technical computer science and embedded systems, he builds the software that allows Decksray to see, understand, and learn. With algorithmic mastery and creative engineering, Ghassen gives the machine its sight."
           }
-          powerAndToughness={"*/*"}
+          powerAndToughness={"* / *"}
         />
         <ProfileCard
           name={"Wadi"}
-          manaCost={"1"}
+          manaCost={"3WWW"}
           imgPath={"/assets/ppl/Wadi.jpeg"}
           cardType={"Creature - Digital Artificer"}
           descr={
             "Wadi brings the card recognition of Decksray to life. With a background in technical computer science and embedded systems, he turns complex algorithms into real-time results. From optimizing image processing to connecting sensors and hardware, Wadi bridges the physical and digital worlds."
           }
-          powerAndToughness={"*/*"}
+          powerAndToughness={"6/6"}
         />
       </div>
     </section>

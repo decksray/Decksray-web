@@ -8,7 +8,24 @@ export const ProfileCard = ({
   descr,
   powerAndToughness,
 }) => {
-  const validSymbols = ["1", "2", "B", "R", "G", "U", "W"];
+  const validSymbols = [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "W",
+    "U",
+    "B",
+    "R",
+    "G",
+    "X",
+  ];
   const manaCostArr = manaCost
     .split("")
     .filter((symbol) => validSymbols.includes(symbol));
@@ -21,7 +38,7 @@ export const ProfileCard = ({
           {manaCostArr.map((symbol, i) => (
             <img
               key={`${symbol} + ${i}`}
-              src={`/assets/mana-symbols/${symbol}.png`}
+              src={`/assets/mana-symbols/${symbol}.svg`}
               alt={`${symbol} mana symbol`}
             />
           ))}

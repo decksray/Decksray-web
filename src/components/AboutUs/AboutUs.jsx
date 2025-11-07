@@ -8,7 +8,7 @@ export const AboutUs = () => {
     <section id="about-us">
       <SubscriptionFormMailerLite />
 
-      <h2>Forged by players, built for players.</h2>
+      <h2 className="section-header">Forged by players, built for players.</h2>
       <p className="section-decription">
         We're a team of collectors, tinkerers, and engineers who love this game
         as much as you do. Decksray was born from our own frustration — a quest

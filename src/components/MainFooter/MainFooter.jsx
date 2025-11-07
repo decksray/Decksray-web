@@ -39,9 +39,7 @@ export const MainFooter = () => {
         <a href="https://youtube.com/@Decksray" target="_blank">
           <i className="fa-brands fa-youtube" />
         </a>
-        <a href="https://bsky.app/profile/decksray.com" target="_blank">
-          <i className="fa-brands fa-bluesky" />
-        </a>
+
         <a
           href="https://www.instagram.com/decksray.com_tcg_scanner/"
           target="_blank"
@@ -49,9 +47,21 @@ export const MainFooter = () => {
           <i className="fa-brands fa-instagram" />
         </a>
 
+        <a href="https://bsky.app/profile/decksray.com" target="_blank">
+          <i className="fa-brands fa-bluesky" />
+        </a>
+
         <a href="https://www.linkedin.com/company/decksray" target="_blank">
           <i className="fa-brands fa-linkedin" />
         </a>
+
+        <a href="https://www.reddit.com/user/ben-decksray/" target="_blank">
+          <i className="fa-brands fa-reddit-alien" />
+        </a>
+
+        {/* <a href="mailto:info@decksray.com" target="_blank">
+          <i className="fa-regular fa-envelope" />
+        </a> */}
 
         {/* coming soon!!!*/}
 

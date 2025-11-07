@@ -4,7 +4,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 4rem;
+  row-gap: 3rem;
+
+  h2 {
+    padding: 0 1rem;
+    text-align: center;
+  }
 
   #about-us-profile-container {
     width: 80%;
@@ -12,7 +17,6 @@
     padding: 2rem;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    //gap: 12px;
     justify-items: center;
     row-gap: 3rem;
   }

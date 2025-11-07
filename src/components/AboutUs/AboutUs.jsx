@@ -7,7 +7,13 @@ export const AboutUs = () => {
   return (
     <section id="about-us">
       <SubscriptionFormMailerLite />
-      <h2>About Us</h2>
+
+      <h2>Forged by players, built for players.</h2>
+      <p className="section-decription">
+        We're a team of collectors, tinkerers, and engineers who love this game
+        as much as you do. Decksray was born from our own frustration — a quest
+        to finally solve a problem the card community has faced for decades.
+      </p>
       <div id="about-us-profile-container">
         <ProfileCard
           name={"Ben"}
@@ -26,7 +32,7 @@ export const AboutUs = () => {
           imgPath={"/assets/ppl/David.jpg"}
           cardType={"Creature - Human Tinkerer"}
           descr={
-            "A die-hard red MTG player, David brings passion and precision to Decksray. With years of experience in metalworking and construction, he knows his way around every tool. Now, as a mechatronics engineer, he channels that same creativity into building the mechanical systems that power Decksray."
+            "A die-hard red MTG player, David brings passion and precision to Decksray. With years of experience in metalworking and construction, he knows his way around every tool. Now, as a mechatronics engineer, he channels that same creativity into building our mechanical systems."
           }
           powerAndToughness={"7/1"}
         />
@@ -73,12 +79,12 @@ export const AboutUs = () => {
           powerAndToughness={"2/5"}
         />
         <ProfileCard
-          name={"Ghassen"}
+          name={"Gaston"}
           manaCost={"XUR"}
           imgPath={"/assets/ppl/Ghassen.jpeg"}
           cardType={"Creature - Digital Artificer"}
           descr={
-            "Ghassen shapes the intelligence behind Decksray's card recognition. Trained in technical computer science and embedded systems, he builds the software that allows Decksray to see, understand, and learn. With algorithmic mastery and creative engineering, Ghassen gives the machine its sight."
+            "Gaston shapes the intelligence behind Decksray's card recognition. Trained in technical computer science, he builds the software that allows Decksray to see and understand. With algorithmic mastery and creative engineering, he gives the machine its sight."
           }
           powerAndToughness={"* / *"}
         />
@@ -88,7 +94,7 @@ export const AboutUs = () => {
           imgPath={"/assets/ppl/Wadi.jpeg"}
           cardType={"Creature - Digital Artificer"}
           descr={
-            "Wadi brings the card recognition of Decksray to life. With a background in technical computer science and embedded systems, he turns complex algorithms into real-time results. From optimizing image processing to connecting sensors and hardware, Wadi bridges the physical and digital worlds."
+            "Wadi brings the card recognition of Decksray to life. With a background in embedded systems, he turns complex algorithms into real-time results. From optimizing image processing to connecting sensors and hardware, Wadi bridges the physical and digital worlds."
           }
           powerAndToughness={"6/6"}
         />

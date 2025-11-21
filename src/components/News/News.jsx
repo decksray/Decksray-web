@@ -1,5 +1,5 @@
 import "./News.scss";
-import { NewsCard } from "../../NewsCard/NewsCard";
+import { NewsCard } from "../NewsCard/NewsCard";
 import { useState } from "react";
 
 export const News = () => {

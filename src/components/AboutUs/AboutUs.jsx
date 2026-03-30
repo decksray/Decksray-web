@@ -92,11 +92,21 @@ export const AboutUs = () => {
           name={"Wadi"}
           manaCost={"3WWW"}
           imgPath={"/assets/ppl/Wadi.jpeg"}
-          cardType={"Creature - Digital Artificer"}
+          cardType={"Creature - Code Alchemist"}
           descr={
             "Wadi brings the card recognition of Decksray to life. With a background in embedded systems, he turns complex algorithms into real-time results. From optimizing image processing to connecting sensors and hardware, Wadi bridges the physical and digital worlds."
           }
           powerAndToughness={"6/6"}
+        />
+        <ProfileCard
+          name={"Adnene"}
+          manaCost={"UUUU"}
+          imgPath={"/assets/ppl/Adnene.jpeg"}
+          cardType={"Creature - Algorithm Sage"}
+          descr={
+            "Adnene is responsible for the intelligence behind Decksray’s system. With a focus on Python backend, machine learning, and computer vision, he builds solutions that understand visual input at scale. He transforms raw data into insights — giving Decksray the power to see."
+          }
+          powerAndToughness={"1/4"}
         />
       </div>
     </section>

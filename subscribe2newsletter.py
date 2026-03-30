@@ -36,7 +36,7 @@ data = data.encode('utf-8')
 
 api = 'https://connect.mailerlite.com/api/subscribers'
 req = request.Request(api, data=data, headers={'User-Agent': 'Mozilla'})
-req.add_header('authorization', 'Bearer '+token)
+req.add_header('authorization', 'Bearer '+ token)
 req.add_header('Content-Type','application/json')
 req.add_header('Accept', '*/*')
 
